@@ -4,23 +4,20 @@ import Pricing from "./pages/Pricing";
 import PageNotFound from "./pages/PageNotFound";
 import Homepage from "./pages/Homepage";
 import AppLayout from "./pages/AppLayout";
-
+import "./index.css";
 
 function App() {
-
-
   return (
     <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Homepage /> } />
-      <Route path="/product" element={<Product /> } />
-      <Route path="/pricing" element={<Pricing /> } />
-      <Route path="*" element={<PageNotFound /> } />
-      <Route path="app" element={<AppLayout /> } />
-    </Routes>
-    
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="*" element={<PageNotFound />} />
+        <Route path="app" element={<AppLayout />} />
+      </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
 export default App;
